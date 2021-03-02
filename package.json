@@ -1,0 +1,33 @@
+{
+  "name": "cfr-demo",
+  "version": "1.0.0",
+  "description": "sample workshop",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha --timeout 0 tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmkanda/cfr-demo.git"
+  },
+  "keywords": [
+    "puppeteer"
+  ],
+  "author": "rmkanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmkanda/cfr-demo/issues"
+  },
+  "homepage": "https://github.com/rmkanda/cfr-demo#readme",
+  "engines": {
+    "node": "15.10.0",
+    "npm": "7.5.3"
+  },
+  "dependencies": {
+    "chai": "^4.3.0",
+    "lighthouse": "^7.2.0",
+    "mocha": "^8.3.0",
+    "puppeteer": "^8.0.0"
+  }
+}
