@@ -4,7 +4,12 @@
 
 ## Steps
 
+- Install Node.js 15
+- Run the below commands
+
 ```
+npm install -g backstopjs
 npm install
 npm test
+cd visual-regression && backstop test
 ```
