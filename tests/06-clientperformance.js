@@ -6,7 +6,7 @@ const reportGenerator = require("lighthouse/lighthouse-core/report/report-genera
 
 const APP_URL = "https://rmkanda.github.io/sample-pwa/";
 
-describe("Performance tests", async () => {
+describe("Client side performance tests", async () => {
   
   it("seo score should be 100", async () => {
     const browser = await puppeteer.launch({
@@ -21,7 +21,7 @@ describe("Performance tests", async () => {
     expect(lighthouseResult.lhr.categories["seo"].score).equals(100 / 100);
 
     console.log("SEO Score" , lighthouseResult.lhr.categories["seo"].score)
-    
+
     const time_to_interactive =
       lighthouseResult.lhr.audits["interactive"].displayValue;
 
