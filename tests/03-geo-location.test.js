@@ -5,7 +5,7 @@ const APP_URL = "https://rmkanda.github.io/sample-pwa/";
 
 describe("Geo Location", async () => {
   it("check site title", async () => {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: false,slowMo:500 });
 
     const context = await browser.defaultBrowserContext();
     await context.overridePermissions(APP_URL, ["geolocation"]);

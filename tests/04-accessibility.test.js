@@ -15,8 +15,8 @@ describe("Accessibility", async () => {
     await browser.close();
   });
 
-  it.skip("verify default language is detected peoperly", async () => {
-    const browser = await puppeteer.launch({});
+  it("verify default language is detected peoperly", async () => {
+    const browser = await puppeteer.launch({headless:true});
     const page = await browser.newPage();
     await page.evaluateOnNewDocument(() => {
       Object.defineProperty(navigator, "language", {
