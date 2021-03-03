@@ -6,7 +6,7 @@ const APP_URL = "https://rmkanda.github.io/sample-pwa/";
 describe("Device Compatablity", async () => {
   it("Test against custom screen resolution", async () => {
     const browser = await puppeteer.launch({
-      headless: ture,
+      headless: true,
       //   args: ["--window-size=540,720"],
     });
     const page = await browser.newPage();
